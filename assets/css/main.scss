@@ -3,6 +3,12 @@
 
 @import "devlopr";
 
+@font-face {
+  font-family: 'ND_1'; /*a name to be used later*/
+  src: url("../fonts/Noise_Dog_Test2.otf");
+  unicode-range: '/','\\', '-';
+}
+
 .example-main {
   color: blue;
 }

@@ -4,6 +4,9 @@ layout: full-width
 
 <script>
   $(document).ready(function() {
+    $("#typewriteNDText").typewrite({
+      actions: [{ type: "{{site.typewrite-ND-text}}" }]
+    });
     $("#typewriteText").typewrite({
       actions: [{ type: "{{site.typewrite-text}}" }]
     });
