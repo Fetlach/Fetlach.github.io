@@ -22,16 +22,16 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: profile.png
+author_logo: FetlachPFPV3_NoBackground.png
 author: Joshua Martin
-author_bio: Hi, my name is Joshua Martin.
+author_bio: Hi! My name is Joshua Martin. I am a software developer with interests in intelligent systems, HCI, and realtime app development.
 author_email: "joshuamartintx@gmail.com"
 author_location: United States
 #author_website_url: ""
 
-typewrite-ND-text: /\-/\-/\-/-\-/\-/\-//-\\-/\-\/-\/\/-\/-\-/\-/--/--/-/-/-/-\-/-/\/
-typewrite-text: Test test test I like to test test test (edit in _config.yml)
-hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+typewrite-ND-text: -/\\--\\-///-////\\///---\\-\\\\-\\/--///--/--\\///--/\\----\\\\/\\//\\\\\\/-\\-/-\\--\\/--///-/--\\/-\\\\-\\\\--/-\\/\\-/\\\\////----/\\--/\\/-//--\\
+typewrite-text: Building Tech that Intrigues
+hero_cover_img: PortfolioBanner3.png # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
@@ -192,6 +192,10 @@ plugins:
 # none - For no default
 # gh-pages - For Github Pages
 # firebase - For Firebase Hosting
+
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
 
 sass:
   sass_dir: _sass

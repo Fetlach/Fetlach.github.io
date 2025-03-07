@@ -3,10 +3,11 @@
 
 @import "devlopr";
 
+/* jcm styling */
 @font-face {
-  font-family: 'ND_1'; /*a name to be used later*/
-  src: url("../fonts/Noise_Dog_Test2.otf");
-  unicode-range: '/','\\', '-';
+  font-family: 'ND_1';
+  src: url(../fonts/ND_1.woff) format("woff"),
+       url(../fonts/ND_1.woff2) format("woff2");
 }
 
 .example-main {

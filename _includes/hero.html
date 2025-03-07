@@ -21,16 +21,16 @@
 <!-- home hero section -->
 <div class="jumbotron">
   <img class="author-profile-img" src="{{site.url}}{{site.baseurl}}/assets/img/{{site.author_logo}}" />
-  <p class="jumbotron-heading">Hi, I am {{site.author}} !</p>
+  <p class="jumbotron-heading">{{site.author}}</p>
 
-  <p style="font-family:ND_1; font-size: 1.30rem !important; font-weight: 600;" id = "typewriteNDText"></p>
-  <p class="lead" id="typewriteText"></p>
-  <!-- github guttoms
-  <span>
-    {%- include github_star_button.html -%}
-    {%- include github_fork_button.html -%}
-  </span> 
-  -->
+  <p class="lead"> 
+    <span>| </span>
+    <span style="font-family: 'ND_1';" id = "typewriteNDText"></span>
+    <span id="typewriteText"></span>
+    <span> |</span>
+  </p>
+
+  
   <!-- uncomment/modify buttons as you want-->
   <div class="jumbotron-btns">
     <a href="{{site.url}}{{site.baseurl}}/get-started">

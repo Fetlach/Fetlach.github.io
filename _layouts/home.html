@@ -4,11 +4,11 @@ layout: full-width
 
 <script>
   $(document).ready(function() {
-    $("#typewriteNDText").typewrite({
-      actions: [{ type: "{{site.typewrite-ND-text}}" }]
+    $("#typewriteNDText").typewrite({speed: 60, showCursor: false,
+      actions: [{ type: "{{site.typewrite-ND-text}}" }, {delay: 1500}, {remove: {num: "{{site.typewrite-ND-text}}".length, type: 'stepped'}}]
     });
-    $("#typewriteText").typewrite({
-      actions: [{ type: "{{site.typewrite-text}}" }]
+    $("#typewriteText").typewrite({showCursor: false,
+      actions: [{delay: 6000}, { type: "{{site.typewrite-text}}" }]
     });
   });
 </script>
