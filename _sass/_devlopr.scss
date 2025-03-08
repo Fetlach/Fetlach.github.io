@@ -144,9 +144,13 @@ body {
 
 .NDText {
     font-family: 'ND_1' !important;
-    text-rendering: optimizeSpeed !important;
+    text-rendering: geometricPrecision !important;
     font-feature-settings: "liga" 1, "rlig" 1;
     -webkit-font-feature-settings: "liga" 1, "rlig" 1;
+    font-variant-ligatures: contextual;
+    -transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    display: inline-flex;
 }
 
 .reactions-view {
