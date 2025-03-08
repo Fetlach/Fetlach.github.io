@@ -8,14 +8,8 @@
   font-family: 'ND_1';
   src: url(../fonts/ND_1.woff2) format("woff2"),
        url(../fonts/ND_1.woff) format("woff");
-  font-variant-ligatures: normal;
-}
-
-@font-face {
-  font-family: 'ND_1_Test';
-  src: url(../fonts/ND_1.woff2) format("woff2"),
-       url(../fonts/ND_1.woff) format("woff");
-  font-variant-ligatures: none;
+  font-feature-settings: "liga" 1, "rlig" 1;
+  -webkit-font-feature-settings: "liga" 1, "rlig" 1;
 }
 
 .example-main {

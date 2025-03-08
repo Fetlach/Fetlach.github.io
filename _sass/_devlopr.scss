@@ -142,6 +142,13 @@ body {
     overflow-y:scroll;
 }
 
+.NDText {
+    font-family: 'ND_1' !important;
+    text-rendering: optimizeSpeed !important;
+    font-feature-settings: "liga" 1, "rlig" 1;
+    -webkit-font-feature-settings: "liga" 1, "rlig" 1;
+}
+
 .reactions-view {
     color: var(--bold-color) !important;
 }
