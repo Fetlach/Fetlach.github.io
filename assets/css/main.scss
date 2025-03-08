@@ -8,6 +8,9 @@
   font-family: 'ND_1';
   src: url(../fonts/ND_1.woff) format("woff"),
        url(../fonts/ND_1.woff2) format("woff2");
+  font-feature-settings: "liga" 1, "rlig" 1;
+  -webkit-font-feature-settings: "liga" 1, "rlig" 1;
+  text-rendering: optimizeLegibility;
 }
 
 .example-main {
