@@ -10,7 +10,7 @@
        url(../fonts/ND_1.woff2) format("woff2");
   font-feature-settings: "liga" 0, "rlig" 0;
   -webkit-font-feature-settings: "liga" 0, "rlig" 0;
-  text-rendering: optimizeSpeed;
+  text-rendering: geometricPrecision;
   transform: translateZ(0);
 }
 
