@@ -154,6 +154,7 @@ body {
     text-rendering: optimizeSpeed !important;
     font-feature-settings: "liga" 0, "rlig" 0;
     -webkit-font-feature-settings: "liga" 0, "rlig" 0;
+    font-variant-ligatures: none;
 }
 
 .reactions-view {
