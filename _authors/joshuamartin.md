@@ -1,9 +1,9 @@
 ---
 name: Joshua Martin
 username: Fetlach
-bio: "Hi I a John, a Web Developer and Designer."
-site: ""
-avatar: johndoe.png
+bio: "Hello! I'm Josh - a software developer"
+site: "https://fetlach.github.io"
+avatar: FetlachPFPV3_NoBackground.png
 email: joshuamartintx@gmail.com
 social:
     - title: "github"

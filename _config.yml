@@ -1,7 +1,7 @@
 title: Fetlach
-subtitle: A Portfolio Jekyll Theme Built for Developers
+subtitle: Joshua Martin's Digital Portfolio
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
+  The digital portfolio for Joshua Martin
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -24,7 +24,7 @@ urls:
 
 author_logo: FetlachPFPV3_NoBackground.png
 author: Joshua Martin
-author_bio: Hi! My name is Joshua Martin. I am a software developer with interests in intelligent systems, HCI, and realtime app development.
+author_bio: Hi! I'm Josh. I am a software developer with interests in intelligent systems, HCI, and realtime app development.
 author_email: "joshuamartintx@gmail.com"
 author_location: United States
 #author_website_url: ""
@@ -47,14 +47,14 @@ author_education_details:
               - college_logo: utd.jpg
                 college_name: University of Texas at Dallas
                 college_url: https://www.utdallas.edu/
-                college_degree: Computer Science
-                description: Master of Science (in progress)
+                college_degree: Computer Science (MS)
+                description: Intelligent Systems Focus (in progress)
                 visibility: true
               - college_logo: tamu.jpg
                 college_name: Texas A&M University
                 college_url: https://www.tamu.edu/
-                college_degree: Visualization
-                description: Bachelor of Science
+                college_degree: Visualization (BS)
+                description: Visual Computing & Game Creation Focuses, CS Minor
                 visibility: true
 
 # Projects
