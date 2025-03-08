@@ -12,6 +12,14 @@
   -webkit-font-feature-settings: "liga" 1, "rlig" 1;
 }
 
+@font-face {
+  font-family: 'ND_1_Test';
+  src: url(../fonts/ND_1.woff2) format("woff2"),
+       url(../fonts/ND_1.woff) format("woff");
+  font-feature-settings: "liga" 0, "rlig" 0;
+  -webkit-font-feature-settings: "liga" 0, "rlig" 0;
+}
+
 .example-main {
   color: blue;
 }
