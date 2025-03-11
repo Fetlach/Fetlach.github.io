@@ -1,0 +1,9 @@
+.reset-page * {
+    all: unset; /* Resets inherited and non-inherited styles */
+    box-sizing: border-box; /* Keeps layout predictable */
+}
+  
+.reset-page {
+    width: 100%;
+    height: 100%;
+}
