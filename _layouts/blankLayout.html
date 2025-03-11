@@ -23,12 +23,32 @@
             -webkit-font-feature-settings: "liga" 0, "rlig" 0;
             font-variant-ligatures: none;
         }
+
+        mark {
+            background-color: red;
+            color: black;
+        }
+
+        mark2 {
+            background-color: orange;
+            color: black;
+        }
+
+        mark3 {
+            background-color: yellow;
+            color: black;
+        }
+
+        mark4 {
+            background-color: green;
+            color: black;
+        }
     </style>
 </head>
 
 <body class="reset-page">
-    <p class='NDText2' style="font-kerning: normal; font-feature-settings: 'kern' 1;">{{site.typewrite-ND-text}}</p> <br>
-    <p class='NDText2' style="font-kerning: none; font-feature-settings: 'kern' 0;">{{site.typewrite-ND-text}}</p> <br>
-    <p class='NDText' style="font-kerning: normal; font-feature-settings: 'kern' 1;">{{site.typewrite-ND-text}}</p> <br>
-    <p class='NDText' style="font-kerning: none; font-feature-settings: 'kern' 0;">{{site.typewrite-ND-text}}</p> <br>
+    <p class='NDText2' style="font-kerning: normal; font-feature-settings: 'kern' 1;"><mark>{{site.typewrite-ND-text}}</mark></p> <br>
+    <p class='NDText2' style="font-kerning: none; font-feature-settings: 'kern' 0;"><mark2>{{site.typewrite-ND-text}}</mark2></p> <br>
+    <p class='NDText' style="font-kerning: normal; font-feature-settings: 'kern' 1;"><mark3>{{site.typewrite-ND-text}}</mark3></p> <br>
+    <p class='NDText' style="font-kerning: none; font-feature-settings: 'kern' 0;"><mark4>{{site.typewrite-ND-text}}</mark4></p> <br>
 </body>
