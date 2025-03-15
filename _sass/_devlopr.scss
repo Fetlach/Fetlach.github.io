@@ -140,8 +140,6 @@ body {
     padding-top:33px;
     overflow-x:hidden;
     overflow-y:scroll;
-
-    -webkit-text-size-adjust: none;
 }
 
 .NDText {
@@ -149,17 +147,6 @@ body {
     font-feature-settings: "liga" 1, "rlig" 1;
     -webkit-font-feature-settings: "liga" 1, "rlig" 1;
 }
-
-.NDText2 {
-    font-family: 'ND_1' !important;
-    font-feature-settings: "liga" 0, "rlig" 0;
-    -webkit-font-feature-settings: "liga" 0, "rlig" 0;
-}
-
-span::after {
-    content: "X";
-    background: red;
-  }
 
 .reactions-view {
     color: var(--bold-color) !important;
