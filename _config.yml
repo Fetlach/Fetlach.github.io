@@ -1,4 +1,4 @@
-title: Fetlach
+title: JM
 subtitle: Joshua Martin's Digital Portfolio
 description: >- # this means to ignore newlines until "baseurl:"
   The digital portfolio for Joshua Martin
@@ -24,11 +24,12 @@ urls:
 
 author_logo: FetlachPFPV3_NoBackground.png
 author: Joshua Martin
-author_bio: Hi! I'm Josh. I am a software developer with interests in intelligent systems, HCI, and realtime app development.
+author_bio: Hi! I'm Josh. A software developer with interests in intelligent systems, HCI, and realtime app development.
 author_email: "joshuamartintx@gmail.com"
 author_location: United States
 #author_website_url: ""
 
+# hero page
 typewrite-ND-text: õèĔĕĖíËċēĉĖõïÜýććêüøÝÑòÛÿĖðÖßĉ
 typewrite-text: Building Tech that Intrigues
 hero_cover_img: PortfolioBanner3.png # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
