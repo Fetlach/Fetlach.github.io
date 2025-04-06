@@ -14,8 +14,10 @@ urls:
       url: /about
     - text: Blog
       url: /blog
-    - text: Gallery
-      url: /gallery
+    #- text: Gallery
+    #  url: /gallery
+    - text: Projects
+      url: /blog/categories/projects/#
     - text: Contact
       url : /contact
 
@@ -23,6 +25,7 @@ urls:
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: FetlachPFPV3_NoBackground.png
+author_hero_logo: PortfolioNameIcon.png
 author: Joshua Martin
 author_bio: Hi! I'm Josh. A software developer with interests in intelligent systems, HCI, and realtime app development.
 author_email: "joshuamartintx@gmail.com"

@@ -5,7 +5,7 @@ summary: "font design using code"
 author: fetlach
 date: '2025-03-17'
 category: ['projects']
-tags: project
+tags: projects
 thumbnail: /assets/img/post_neography/VagaboundND.png
 keywords: Conlang, Font, Neography, Scripting
 usemathjax: false
