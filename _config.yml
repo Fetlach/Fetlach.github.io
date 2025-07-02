@@ -3,7 +3,7 @@ subtitle: Joshua Martin's Digital Portfolio
 description: >- # this means to ignore newlines until "baseurl:"
   The digital portfolio for Joshua Martin
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+url: "https://fetlach.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
@@ -161,7 +161,7 @@ defaults:
       path: 'assets/**'
     values:
       sitemap: false
-
+   
 # Build settings
 plugins:
   - jekyll-paginate
