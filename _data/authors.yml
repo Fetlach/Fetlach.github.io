@@ -4,15 +4,15 @@ fetlach:
    username: fetlach
    site: http://fetlach.github.io
    avatar: FetlachPFPV3_NoBackground.png
-   bio: "Hi I a John, a Web Developer and Designer."
+   bio: "Hi I'm josh, a software developer."
    email: joshuamartintx@gmail.com
    social:
       - title: "github"
-        url: "https://github.com/johndoe"
+        url: "https://github.com/fetlach"
       - title: "linkedin"
-        url: "https://www.linkedin.com/in/johndoe"
-      - title: "youtube"
-        url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
+        url: "https://www.linkedin.com/in/joshua-martin-b347381b7/"
+      #- title: "youtube"
+      #  url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
       # - title: "facebook"
       #   url: "https://www.facebook.com/johndoe"
       - title: "twitter"
