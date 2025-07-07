@@ -74,8 +74,3 @@ In my case, it was cross-platform compatability which gave me trouble. For one r
 <center><img src="/assets/img/post_neography/IOSvsNotFontComparison.PNG" class="img-fluid"></center><br>
 
 I sidestepped around this issue for the meantime by writing a script to convert my input string into a version with the explicit characters for the combined glyphs, though may properly address it in the future by setting up a debugging environment. Always make sure to test!
-
-
-<h2> Further usage </h2>
-
-I have plans for splashing the results from this project into other future side projects as they pop up. Text rendering is almost universally supported outside of a few edge cases, so why not?
