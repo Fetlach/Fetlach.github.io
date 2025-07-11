@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Meltygrid Project"
-summary: "going off-grid with voronoi"
+summary: "Going off-grid with Voronoi"
 author: fetlach
 date: '2025-07-02'
 category: ['projects']

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Neography Fonts Project"
-summary: "font design using code"
+summary: "Font design using code"
 author: fetlach
 date: '2025-03-17'
 category: ['projects']

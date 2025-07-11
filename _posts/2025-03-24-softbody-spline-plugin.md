@@ -55,12 +55,12 @@ This method, called "timestep fixing", works very well. Though, a cap on the num
 <h2> 3D Splines & Rotation Minimizing Frames </h2>
 
 One challenge in calculating a fitting spline is that if the simulated points were taken as a raw input then the output spline would likely not go through those points.
-However, we can do a bit of additional work to segment the spline into a series of cubic bezier curves where we solve for the tangents at each end and position the bezier anchors accordingly. This produces a series of cubic beziers we can sample N points from to create a spline that looks very accurate to the input. 
+We can do a bit of additional work to segment the spline into a series of cubic bezier curves where we solve for the tangents at each end and position the bezier anchors accordingly. This produces a series of cubic beziers we can sample N points from to create a spline that looks very accurate to the input. 
 This cubic bezier series also serves as the basis for queries in subsequent steps.
 
 However, in 3D a spline's normal and perpendicular are not as well defined.
 In 3D a twist will occur in the spline which we would expect the normal to follow. While we can calculate the normals and tangents using just the local position on the spline, when the spline flips concavity so too will these directions flip.
-For this reason, we can use Rotation-Minimizing-Frames to correct these flips when they occur.
+For this reason, we can use [Rotation-Minimizing-Frames](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/Computation-of-rotation-minimizing-frames.pdf) to correct these flips when they occur.
 
 A more robust physics implementation using [cosserat rods](https://www.cosseratrods.org/cosserat_rods/theory/) that was planned but could not be achieved in time sidesteps an issue where RMF may quickly "flip" the end of the spline in certain arrangements. This odd artifact occurs because while RMF is consistent for every arrangement, slightly different permutations might have inverted concavity and yield significantly different results.
 Cosserat rods fix this by having several rotational constraints on the particles, and thus inherently keep track of how the spline is rotated at each simulated point.
@@ -90,7 +90,5 @@ This interfaces with the rest of the engine's socket implementation nicely, allo
 After our final report, a friend asked me to do a quick mockup for a weapon from Tokyo Ghoul. 
 It was surprisingly easy to implement using the dynamic sockets and ability to modify the shape of the spline - It took about as long to set up as it took to create the meshes.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wyW3sSpMyII?si=hpCzSxE3cYvi7xwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<h2> Post-Mortem </h2>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/wyW3sSpMyII?si=hpCzSxE3cYvi7xwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
 

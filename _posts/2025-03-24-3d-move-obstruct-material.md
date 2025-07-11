@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Stylized 3D Obstruction Materal"
-summary: "Getting out of view with WPO"
+title:  "Stylized Debris Obstruction"
+summary: "getting out of view with WPO"
 author: fetlach
-date: '2099-03-24'
-category: ['wip']
-tags: project
+date: '2025-07-09'
+category: ['projects']
+tags: projects
 thumbnail: /assets/img/post_neography/VagaboundND.png
 keywords: UX, Shaders, Unreal Engine, Materials, VFX
 usemathjax: false
@@ -50,4 +50,4 @@ Then, the normalized Vector DC is the perpendicular direction vector we'd like t
 The second part, how much to push the object, depends on what you want to achieve with the effect.
 For this tutorial I'll use a 3D capsule SDF as an example of an "activator". You can check out a list of SDF implementations [here](https://iquilezles.org/articles/distfunctions/) - Some other good ideas are a rounded cone or a polygonal extrusion.
 
-The idea here is to ease into the effect with a smoothstep on distance thresholds. We return a 1 when the point is on or inside the SDF, and smoothly interpolate to 0 as our query point gets further away. This lets us smoothly interpolate the push in and out automatically as our input vectors move around the scene.
+The idea here is to ease into the effect with a smoothstep on distance thresholds. We return a 1 when the point is on or inside the SDF, and smoothly interpolate to 0 as our query point reaches a certain distance away from the SDF's border. This lets us smoothly interpolate the push in and out automatically as our input vectors move around the scene.

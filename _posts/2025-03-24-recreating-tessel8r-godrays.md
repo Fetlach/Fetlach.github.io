@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Recreating Tessel8r's Godrays"
-summary: "a raymarched approach to stylized volumetric lighting"
+summary: "A raymarched approach to stylized volumetric lighting"
 author: fetlach
 date: '2099-03-24'
 category: ['projects']
