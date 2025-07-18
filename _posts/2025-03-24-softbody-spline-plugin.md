@@ -6,7 +6,7 @@ author: fetlach
 date: '2024-06-01'
 category: ['projects']
 tags: project
-thumbnail: /assets/img/post_neography/VagaboundND.png
+thumbnail: /assets/img/posts/SoftbodyCapstone/BendTest.png
 keywords: Unreal Engine, Plugin, Physics, XPBD, Rendering, VFX
 usemathjax: false
 permalink: /blog/xpbd-whip-3-24-2025/
@@ -55,15 +55,19 @@ This method, called "timestep fixing", works very well. Though, a cap on the num
 <h2> 3D Splines & Rotation Minimizing Frames </h2>
 
 One challenge in calculating a fitting spline is that if the simulated points were taken as a raw input then the output spline would likely not go through those points.
-We can do a bit of additional work to segment the spline into a series of cubic bezier curves where we solve for the tangents at each end and position the bezier anchors accordingly. This produces a series of cubic beziers we can sample N points from to create a spline that looks very accurate to the input. 
-This cubic bezier series also serves as the basis for queries in subsequent steps.
+We can do a bit of additional work to segment the spline into a series of cubic bezier curves where we solve for the tangents at each end and position the bezier anchors accordingly. This produces a series of cubic beziers we can resample N points from to create a spline that looks very accurate to the input. 
+This cubic bezier series also serves as the basis for queries in subsequent steps, and is very beneficial for realtime performance since we can increase the observable quality of the component without needing to simulate additional particles.
 
 However, in 3D a spline's normal and perpendicular are not as well defined.
 In 3D a twist will occur in the spline which we would expect the normal to follow. While we can calculate the normals and tangents using just the local position on the spline, when the spline flips concavity so too will these directions flip.
 For this reason, we can use [Rotation-Minimizing-Frames](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/Computation-of-rotation-minimizing-frames.pdf) to correct these flips when they occur.
 
+<center><img src="/assets/img/posts/SoftbodyCapstone/RMF.png" class="img-fluid"></center><br>
+
 A more robust physics implementation using [cosserat rods](https://www.cosseratrods.org/cosserat_rods/theory/) that was planned but could not be achieved in time sidesteps an issue where RMF may quickly "flip" the end of the spline in certain arrangements. This odd artifact occurs because while RMF is consistent for every arrangement, slightly different permutations might have inverted concavity and yield significantly different results.
 Cosserat rods fix this by having several rotational constraints on the particles, and thus inherently keep track of how the spline is rotated at each simulated point.
+
+Cosserat rods also fix an issue seen in the quick mockup at the very end where the entire spline can "flutter". The "fluttering" is caused by the twist along the X axis not being tracked and thus propagating along the spline. Cosserat rods fix this because the particles keep track of relative twist and interpolate it over time via constraint propagation.
 
 <h2> Rendering Pipeline </h2>
 
@@ -77,6 +81,11 @@ This causes ghosting artifacts when the scene component moves but the mesh does 
 Contained within the component are several methods for overriding the physics and rendering, and also certain queries for the spline.
 Notably, a lot of work was put into getting a lesser-known curve widget working in the editor. These curves were used to define certain physics properties such as mass along the spline, and width profiles for the rendered spline.
 This speeds up prototyping dramatically, as certain data that varies across the spline can be easily viewed and manipulated with just a few clicks.
+
+<center><img src="/assets/img/posts/SoftbodyCapstone/profile1.png" class="img-fluid"></center>
+<center><img src="/assets/img/posts/SoftbodyCapstone/profile1mesh.png" class="img-fluid"></center><br>
+<center><img src="/assets/img/posts/SoftbodyCapstone/profile2.png" class="img-fluid"></center>
+<center><img src="/assets/img/posts/SoftbodyCapstone/profile2mesh.png" class="img-fluid"></center><br>
 
 <h2> Sockets and Mesh Attachment </h2>
 
