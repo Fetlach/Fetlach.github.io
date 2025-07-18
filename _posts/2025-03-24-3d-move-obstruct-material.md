@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Stylized Debris Obstruction"
-summary: "getting out of view with WPO"
+summary: "Getting out of view with WPO"
 author: fetlach
 date: '2025-07-09'
 category: ['projects']
