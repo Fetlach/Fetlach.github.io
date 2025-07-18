@@ -155,3 +155,13 @@ Graph searches can find the extents of certain regions or provide general method
 Unfortunately, a limitation with the current system is updating generated meshes at runtime for irregular tile arrangements. 
 While systems that use instancing such as voxel or tile based systems can do this much easier, it is not so easy to update procedural mesh sections without incurring a hit to performance. This can be partially worked around by breaking the extrusions down into walls and faces such that walls could have their scalings updated or be hidden. Though, we cannot pre-generate a mesh for N-sided polygons and workarounds for this are not very feasible for general use. 
 However, full optimization via ISM can be achieved for [regular tilings](https://en.wikipedia.org/wiki/Euclidean_tilings_by_convex_regular_polygons#Archimedean,_uniform_or_semiregular_tilings) by pre-generating a small set of meshes for the top faces so long as the tiles can each be represented by a single site (or decomposed into multiple tiles for more complex arrangements).
+
+<h2>Future Work</h2>
+
+Recently I discovered the open-source project [PCGEx](https://github.com/Nebukam/PCGExtendedToolkit), which does most of what this project seeks but is oriented towards editor-time usage. 
+However, the terminology and framework is much better than what I could accomplish on my own so the first benchmark so far is to rework this prototype into a similar framework.
+
+The second benchmark will be getting each of the described features working in a tech demo. The current project is still very early in development due to the research I've put into keeping the system runtime-friendly. So an obvious next step is to make something using it.
+Currently I'm looking into a simple 3D occlusion effect that can be done thanks to the geometry constraints the graph provides, and implementing the extensions for terrain generation mentioned in this article.
+
+Keeping with the above, I am also looking into a way of sidestepping the current sampler's performance loss using infinitely tileable blue noise. Though, my research is ongoing.
