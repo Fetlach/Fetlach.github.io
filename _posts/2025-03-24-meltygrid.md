@@ -10,6 +10,7 @@ thumbnail: /assets/img/posts/Meltygrid/Meltygrid.png
 keywords: Voronoi, Unreal Engine, Plugin, Computational Geometry
 usemathjax: false
 permalink: /blog/meltygrid-3-24-2025/
+featured: true
 ---
 
 <h2>Overview</h2>
