@@ -8,42 +8,22 @@
       <h1 class="card-title">Featured Article</h1>
     </div>
     <div id="recent-articles-show-all">
-      <a class="btn btn-lg btn-dark" href="/featured"> View All </a>
+      <a class="btn btn-lg btn-dark" href="/blog/categories/projects/"> View All </a>
     </div>
   </div>
   <br />
+  <div class="featured-project">
+  <div class="thumb">
+    <img src="{{site.url}}{{site.baseurl}}{{featured_post.thumbnail}}">
+  </div>
+  <div class="content">
+    <h2><a href="{{site.url}}{{site.baseurl}}{{featured_post.permalink}}">{{featured_post.title}}</a>
+    <span style="color: #ccc; font-size: 15px;"> - <i><time datetime="{{ featured_post.date }}" itemprop="datePublished">{{ featured_post.date | date: "%b %-d, %Y" }}</time></i></span>
+    </h2>
+    <p>{{featured_post.summary}}</p>
+    <a href="{{site.url}}{{site.baseurl}}{{featured_post.permalink}}" class="btn">Read More</a>
+  </div>
+</div>
 
-  <ul>
-        <!--show featured post-->
-    <li class="article-card">
-      <a href="{{featured_post.url}}" class="article-card-link">
-        <div id="article-container">
-          <div id="article-img">
-            {% if featured_post.author %}
-              {% assign author = featured_post.author %}
-              {% if author %}
-               {% assign author_data = site.data.authors[author] %}
-               <img
-                src="{{site.url}}{{site.baseurl}}/assets/img/authors/{{author_data.avatar}}"
-                width="50px"
-                height="50px"
-             />
-              {% endif %}
-            {% endif %}
-
-          </div>
-          <div id="article-link">
-              <p class="recent-article-link">{{featured_post.title}} <span style="color: #ccc; font-size: 15px;"> - <i><time datetime="{{ featured_post.date }}" itemprop="datePublished">{{ featured_post.date | date: "%b %-d, %Y" }}</time></i></span></p>
-            </div>
-            <div id="article-alert">
-            {% for cat in featured_post.category limit:1 %}
-             <button class="btn btn-sm btn-dark">{{cat}}</button>
-            {% endfor %}
-            </div>
-        </div>
-      </a>
-    </li>
-
-    {% endif %}
-  </ul>
+{% endif %}
 </section>

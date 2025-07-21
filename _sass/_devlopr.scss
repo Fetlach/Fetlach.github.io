@@ -148,6 +148,34 @@ body {
     -webkit-font-feature-settings: "liga" 1, "rlig" 1;
 }
 
+.featured-project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: #232323;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.featured-project .thumb {
+  flex: 1 1 300px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.featured-project .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-project .content {
+  flex: 2 1 400px;
+}
+
 .reactions-view {
     color: var(--bold-color) !important;
 }
