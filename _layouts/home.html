@@ -15,7 +15,7 @@ layout: full-width
   }
 
   $(document).ready(function() {
-    $("#typewriteNDText").typewrite({speed: 15, showCursor: false,
+    $("#typewriteNDText").typewrite({speed: 30, showCursor: false,
       actions: [{ type: "{{site.typewrite-ND-text}}" }, {delay: 1500}, {remove: {num: "{{site.typewrite-ND-text}}".length, type: 'stepped'}}]
     });
     
